@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/basic"
+            android:hint="Email"
+            android:backgroundTint="@color/colorAccent"
+            android:inputType="textEmailAddress"
+            android:maxHeight="200dp"
+            android:textColor="?attr/primaryTextColor"
+            android:textColorHint="?attr/primaryTextColor"
+            android:textSize="8pt" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_password_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/basic"
+            android:hint="Password"
+            android:backgroundTint="@color/colorAccent"
+            android:inputType="textPassword"
+            android:maxHeight="200dp"
+            android:textColor="?attr/primaryTextColor"
+            android:textColorHint="?attr/primaryTextColor"
+            android:textSize="8pt" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_address_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_home_accent_24dp"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/basic"
+            android:hint="City"
+            android:backgroundTint="@color/colorAccent"
+            android:inputType="text"
+            android:maxHeight="200dp"
+            android:textColor="?attr/primaryTextColor"
+            android:textColorHint="?attr/primaryTextColor"
+            android:textSize="8pt" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button"
+        android:id="@+id/btn_register"
+        android:text="Register"
+        android:foreground="?attr/selectableItemBackground"
+        android:textAllCaps="false"
+        android:fontFamily="@font/allerta"
+        android:textSize="8pt"/>
+
+</LinearLayout>

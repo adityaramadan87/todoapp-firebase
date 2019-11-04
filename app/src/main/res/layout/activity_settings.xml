@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:background="?attr/backgroundSplash"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:paddingTop="30dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:layout_gravity="left|top"
+            android:id="@+id/imgBack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_bhai"
+            android:paddingLeft="10dp"
+            android:text="Settings"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/background_settings"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:drawableStart="@drawable/ic_brightness_3_black_24dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/allerta"
+            android:text="Night Mode"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="8pt" />
+
+        <Switch
+            android:id="@+id/switchNight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/background_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="8pt"
+            android:textColor="?attr/primaryTextColor"
+            android:fontFamily="@font/allerta"
+            android:id="@+id/txt_about_app"
+            android:drawableStart="@drawable/ic_android_black_24dp"
+            android:drawablePadding="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_about"
+            android:animateLayoutChanges="true"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/backgroundCardColor"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/background_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:id="@+id/txt_about_2"
+                android:textSize="8pt"
+                android:textColor="?attr/primaryTextColor"
+                android:fontFamily="@font/allerta"
+                android:drawableStart="@drawable/ic_android_black_24dp"
+                android:drawablePadding="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/background_logo"
+                    android:padding="10dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/text_logo_fix"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Schedo"
+                    android:gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/basic"
+                    android:textSize="12pt"
+                    android:textColor="?attr/primaryTextColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/primaryTextColor"
+                    android:text="version"
+                    android:textSize="8pt"
+                    android:gravity="center"
+                    android:id="@+id/txt_version"
+                    android:fontFamily="@font/allerta"/>
+
+
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:textColor="?attr/primaryTextColor"
+                    android:text="@string/isi"
+                    android:gravity="center"
+                    android:fontFamily="@font/allerta"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/primaryTextColor"
+                    android:text="Indonesian"
+                    android:drawableLeft="@drawable/indonesia_map"
+                    android:drawableRight="@drawable/indonesia_flag"
+                    android:drawablePadding="10dp"
+                    android:textSize="8pt"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/txt_nationality"
+                    android:fontFamily="@font/allerta"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/background_settings"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate Us"
+        android:textSize="8pt"
+        android:textColor="?attr/primaryTextColor"
+        android:fontFamily="@font/allerta"
+        android:id="@+id/txt_rate_us"
+        android:drawableStart="@drawable/ic_star_black_24dp"
+        android:drawablePadding="20dp"/>
+
+</LinearLayout>

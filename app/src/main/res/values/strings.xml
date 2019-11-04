@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Schedo</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="banner_ad_unit_id">ca-app-pub-8820338115532670/1472423648</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="isi">
+        <i>This application helps you arrange a schedule of what to do.
+        When the time you set arrives, a notification will be sent to you,
+            and we hope that the notification can remind you to complete the assignment you have set.</i>
+        \n
+        \n
+        \n Greetings From Dev
+        \n<b>Rizky Adytia Ramadan</b>
+    </string>
+</resources>

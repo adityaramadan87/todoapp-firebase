@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/na"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_renew"
+        android:visibility="gone"
+        android:src="@drawable/ic_autorenew_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/img_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829" />
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile"
+        app:layout_constraintVertical_bias="0.178">
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <EditText
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:backgroundTint="@color/colorAccent"
+                android:fontFamily="@font/baloo_bhai"
+                android:gravity="center"
+                android:text="Username"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12pt" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.4">
+
+            <ImageView
+                android:id="@+id/img_editusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit_white_24dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/img_doneusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check_black_24dp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile"
+        app:layout_constraintVertical_bias="0.357">
+
+        <TextView
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email_bck_24dp"
+            android:textSize="8pt"
+            android:textColor="?attr/primaryTextColor"
+            android:text="Email@email.com"
+            android:fontFamily="@font/allerta"
+            android:id="@+id/txt_emailAddress"
+            android:drawablePadding="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInput"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:fontFamily="@font/allerta"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="8pt"
+                android:drawableLeft="@drawable/ic_location_city_bc_24dp"
+                android:drawablePadding="20dp"
+                android:backgroundTint="?attr/backgroundColor"
+                android:id="@+id/address"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/txt_settings"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_settings_black_24dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/allerta"
+            android:text="Settings"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="8pt" />
+
+
+        <TextView
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/change_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_lock_bck_24dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/allerta"
+            android:text="Change Password"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="8pt" />
+
+        <TextView
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/txt_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/allerta"
+            android:text="Logout"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="8pt" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

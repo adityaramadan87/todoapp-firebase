@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "680002646637",
+    "firebase_url": "https://todofirebasefix3.firebaseio.com",
+    "project_id": "todofirebasefix3",
+    "storage_bucket": "todofirebasefix3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680002646637:android:9cdf56868c048c1f7e0564",
+        "android_client_info": {
+          "package_name": "co.id.ramadanrizky.todofirebasefix3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680002646637-v4c47ilq7729v84b6tn5mu6r6m9o8n7e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.id.ramadanrizky.todofirebasefix3",
+            "certificate_hash": "cd8f28317c11a848fe6a785da0bce29cd727a6c8"
+          }
+        },
+        {
+          "client_id": "680002646637-ncoave8q26u1dlbh4mns6meli5rh4kfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGui1Ml9oM1Dx4l8PkIVX--Cm3QkfaL7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680002646637-ncoave8q26u1dlbh4mns6meli5rh4kfj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

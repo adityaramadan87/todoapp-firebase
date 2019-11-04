@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/bottom_weather"
+    android:background="@drawable/background_weather"
+    android:layout_width="match_parent"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:clipToPadding="true"
+    android:layout_height="wrap_content"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="60dp">
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:padding="6dp"
+        android:clickable="true"
+        android:fontFamily="@font/averia_sans_libre_bold"
+        android:textSize="8pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="forecast weather in your city"
+        android:id="@+id/txt_forecast"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_weather"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
