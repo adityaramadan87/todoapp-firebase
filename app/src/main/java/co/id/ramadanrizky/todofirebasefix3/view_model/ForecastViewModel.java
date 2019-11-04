@@ -26,7 +26,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class ForecastViewModel extends ViewModel {
 
-    private static final String APP_ID = "d0d7a0d307b90d0f9cc936e98ce50667";
+    private static final String APP_ID = "YOUR_API_KEY";
     private MutableLiveData<ArrayList<WeatherForecast>> listForecast = new MutableLiveData<>();
 
     public void getForecastWeather(){
